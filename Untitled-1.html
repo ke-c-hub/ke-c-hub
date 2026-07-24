@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Calendrier</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="login">
+
+    <div class="box">
+
+        <h1>Bienvenue 👋</h1>
+
+        <p>Avant de continuer, entre ton prénom.</p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Ex : Emmanuel">
+
+        <button onclick="enter()">
+            Entrer
+        </button>
+
+    </div>
+
+</div>
+
+
+<div id="calendar" class="hide">
+
+    <header>
+
+        <h2 id="welcome"></h2>
+
+        <div class="month">
+
+            <button onclick="changeMonth(-1)">❮</button>
+
+            <h3 id="month"></h3>
+
+            <button onclick="changeMonth(1)">❯</button>
+
+        </div>
+
+    </header>
+
+    <div class="days">
+
+        <div>Lun</div>
+        <div>Mar</div>
+        <div>Mer</div>
+        <div>Jeu</div>
+        <div>Ven</div>
+        <div>Sam</div>
+        <div>Dim</div>
+
+    </div>
+
+    <div id="dates"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
